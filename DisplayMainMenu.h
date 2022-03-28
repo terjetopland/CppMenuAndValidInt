@@ -8,7 +8,7 @@
 #define CPPVALIDINTCHECKER_DISPLAYMAINMENU_H
 
 
-void MMenu(std::vector<std::string> text_of_each_menu_choices ){
+void MMenu(const std::vector<std::string>& text_of_each_menu_choices ){
     static int count{};
 
     for (auto &text: text_of_each_menu_choices) {
