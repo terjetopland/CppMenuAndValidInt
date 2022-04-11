@@ -9,7 +9,7 @@
 
 
 void MMenu(const std::vector<std::string>& text_of_each_menu_choices ){
-    static int count{};
+    int count = 0;
 
     for (auto &text: text_of_each_menu_choices) {
         std::cout << count+1 << ". "<<text << std::endl;
