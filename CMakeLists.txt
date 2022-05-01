@@ -3,4 +3,4 @@ project(CPPValidIntChecker)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CPPValidIntChecker main.cpp CheckValidInt.h DisplayMainMenu.h)
+add_executable(CPPValidIntChecker main.cpp CheckValidInt.h DisplayMainMenu.h MyCountDownToExit.cpp MyCountDownToExit.h GotoThisLineInConsole.cpp GotoThisLineInConsole.h)

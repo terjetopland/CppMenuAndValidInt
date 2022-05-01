@@ -1,12 +1,17 @@
 #include <iostream>
 #include "CheckValidInt.h"
 #include "DisplayMainMenu.h"
+#include "MyCountDownToExit.h"
+
 
 int main() {
+
+    CountDown(10);
 
     bool exit = false;
     //e.g. 4 menu choices (could be whatever you want)
     int max_menu_choices = 4;
+
 
     //continues until
     while (!exit) {
@@ -38,6 +43,8 @@ int main() {
             exit = true;
             std::cout   << "You entered " << check << std::endl
                         <<"Closing menu and program" << std::endl;
+
+
         }
     }
     return 0;
