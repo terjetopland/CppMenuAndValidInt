@@ -9,18 +9,16 @@
 
 void CountDown(int secondsCountDown){
     std::string stop = "stop";
-    std::string theProgramWill = "The program will close after ";
+    std::string theProgramWillClose = "The program will close after ";
     std::string pleasePressEnter = "Please press 'Enter' to continue!";
     std::string seconds = " seconds. ";
 
-    std::cout   << theProgramWill
+    std::cout   << theProgramWillClose
                 << secondsCountDown
                 << seconds
                 << pleasePressEnter;
 
     while(secondsCountDown >= 1 && stop == "stop") {
-        Sleep(1000);
-
 
         if(secondsCountDown == 1) {
 
@@ -36,7 +34,6 @@ void CountDown(int secondsCountDown){
                         << seconds
                         << pleasePressEnter
                         << std::endl << std::endl;
-
         }
 
         if(secondsCountDown <= 9 && secondsCountDown > 1) {
@@ -54,7 +51,6 @@ void CountDown(int secondsCountDown){
                         << seconds
                         << pleasePressEnter;
             std::cout.flush();
-
         }
 
         if(secondsCountDown > 9) {
@@ -71,7 +67,7 @@ void CountDown(int secondsCountDown){
             std::cout.flush();
         }
 
-
+        Sleep(1000);
         secondsCountDown--;
     }
 }
